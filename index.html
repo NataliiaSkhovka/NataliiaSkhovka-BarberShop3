@@ -24,7 +24,6 @@
 		<!-- custom styles-->
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
-		
 	</head>
 	<body data-body>
 		<!--Header-->
@@ -213,14 +212,30 @@
 			</section> -->
 
 			<!-- Секція Team -->
-			<!-- <section id="team" class="team">
+			<section id="team" class="team">
 				<div class="container">
 					<p class="uppertitle uppertitle--mode-light">для настоящих ценителей атмосферы</p>
 					<h2 class="team__title title title--mode-light">Наши мастера</h2>
-
 					<ul class="team__list card-set list">
 						<li class="team__item card-set__item">
-							<img class="team__avatar" src="./images/masters/John.jpg" alt="John Smith" width="370" height="346" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team/John_L.jpg 1x, ./images/team/John@2x_L.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team/John_M.jpg 1x, ./images/team/John@2x_M.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team/John_S.jpg 1x, ./images/team/John@2x_S.jpg 2x"
+									type="image/jpg"
+								/>
+								<img class="team__avatar" src="./images/team/John_S.jpg" alt="John Smith" width="418" height="346" />
+							</picture>
 							<div class="team__wrapper">
 								<h3 class="team__subtitle" lang="en">John Smith</h3>
 								<p class="team__position" lang="en">Extreme Barber</p>
@@ -281,7 +296,30 @@
 							</div>
 						</li>
 						<li class="team__item card-set__item">
-							<img class="team__avatar" src="./images/masters/Michele.jpg" alt="Michele Doe" width="370" height="346" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team/Michele_L.jpg 1x, ./images/team/Michele@2x_L.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team/Michele_M.jpg 1x, ./images/team/Michele@2x_M.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team/Michele_S.jpg 1x, ./images/team/Michele@2x_S.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="team__avatar"
+									src="./images/team/Michele_S.jpg"
+									alt="Michele Doe"
+									width="418"
+									height="346"
+								/>
+							</picture>
 							<div class="team__wrapper">
 								<h3 class="team__subtitle" lang="en">Michele Doe</h3>
 								<p class="team__position" lang="en">Extreme Barber</p>
@@ -294,7 +332,6 @@
 											rel="noopener noreferrer"
 											aria-label="instagram"
 										>
-										
 											<svg class="social-media__icon" width="20" height="20">
 												<use href="./images/symbol-defs.svg#icon-instagram"></use>
 											</svg>
@@ -343,7 +380,24 @@
 							</div>
 						</li>
 						<li class="team__item card-set__item">
-							<img class="team__avatar" src="./images/masters/Alan.jpg" alt="Alan Black" width="370" height="346" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team/Alan_L.jpg 1x, ./images/team/Alan@2x_L.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team/Alan_M.jpg 1x, ./images/team/Alan@2x_M.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team/Alan_S.jpg 1x, ./images/team/Alan@2x_S.jpg 2x"
+									type="image/jpg"
+								/>
+								<img class="team__avatar" src="./images/team/Alan_S.jpg" alt="Alan Black" width="418" height="346" />
+							</picture>
 							<div class="team__wrapper">
 								<h3 class="team__subtitle" lang="en">Alan Black</h3>
 								<p class="team__position" lang="en">Extreme Barber</p>
@@ -356,7 +410,6 @@
 											rel="noopener noreferrer"
 											aria-label="instagram"
 										>
-									
 											<svg class="social-media__icon" width="20" height="20">
 												<use href="./images/symbol-defs.svg#icon-instagram"></use>
 											</svg>
@@ -406,7 +459,7 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- Секція Portfolio -->
 			<section class="portfolio">
@@ -416,23 +469,29 @@
 					<ul class="portfolio__list list card-set">
 						<li class="portfolio__item card-set__item">
 							<picture>
-                <source
-                media="(min-width: 1200px)"
-                srcset="./images/portfolio/1_L.jpg 1x, ./images/portfolio/1@2x_L.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(min-width: 768px)"
-                srcset="./images/portfolio/1_M.jpg 1x, ./images/portfolio/1@2x_M.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(max-width: 767px)"
-                srcset="./images/portfolio/1_S.jpg 1x, ./images/portfolio/1@2x_S.jpg 2x "
-                type="image/jpg" 
-                />
-              <img class="portfolio__pic" src="./images/portfolio/1_S.jpg" alt="Пример работы 1" width="418" height="360" />
-              </picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/portfolio/1_L.jpg 1x, ./images/portfolio/1@2x_L.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/portfolio/1_M.jpg 1x, ./images/portfolio/1@2x_M.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/portfolio/1_S.jpg 1x, ./images/portfolio/1@2x_S.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="portfolio__pic"
+									src="./images/portfolio/1_S.jpg"
+									alt="Пример работы 1"
+									width="418"
+									height="360"
+								/>
+							</picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -442,23 +501,29 @@
 						</li>
 						<li class="portfolio__item card-set__item">
 							<picture>
-                <source
-                media="(min-width: 1200px)"
-                srcset="./images/portfolio/2_L.jpg 1x, ./images/portfolio/2@2x_L.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(min-width: 768px)"
-                srcset="./images/portfolio/2_M.jpg 1x, ./images/portfolio/2@2x_M.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(max-width: 767px)"
-                srcset="./images/portfolio/2_S.jpg 1x, ./images/portfolio/2@2x_S.jpg 2x "
-                type="image/jpg" 
-                />
-              <img class="portfolio__pic" src="./images/portfolio/2_S.jpg" alt="Пример работы 2" width="418" height="360" />
-              </picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/portfolio/2_L.jpg 1x, ./images/portfolio/2@2x_L.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/portfolio/2_M.jpg 1x, ./images/portfolio/2@2x_M.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/portfolio/2_S.jpg 1x, ./images/portfolio/2@2x_S.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="portfolio__pic"
+									src="./images/portfolio/2_S.jpg"
+									alt="Пример работы 2"
+									width="418"
+									height="360"
+								/>
+							</picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -468,23 +533,29 @@
 						</li>
 						<li class="portfolio__item card-set__item">
 							<picture>
-                <source
-                media="(min-width: 1200px)"
-                srcset="./images/portfolio/3_L.jpg 1x, ./images/portfolio/3@2x_L.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(min-width: 768px)"
-                srcset="./images/portfolio/3_M.jpg 1x, ./images/portfolio/3@2x_M.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(max-width: 767px)"
-                srcset="./images/portfolio/3_S.jpg 1x, ./images/portfolio/3@2x_S.jpg 2x "
-                type="image/jpg" 
-                />
-              <img class="portfolio__pic" src="./images/portfolio/3_S.jpg" alt="Пример работы 3" width="418" height="360" />
-              </picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/portfolio/3_L.jpg 1x, ./images/portfolio/3@2x_L.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/portfolio/3_M.jpg 1x, ./images/portfolio/3@2x_M.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/portfolio/3_S.jpg 1x, ./images/portfolio/3@2x_S.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="portfolio__pic"
+									src="./images/portfolio/3_S.jpg"
+									alt="Пример работы 3"
+									width="418"
+									height="360"
+								/>
+							</picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -494,23 +565,29 @@
 						</li>
 						<li class="portfolio__item card-set__item">
 							<picture>
-                <source
-                media="(min-width: 1200px)"
-                srcset="./images/portfolio/4_L.jpg 1x, ./images/portfolio/4@2x_L.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(min-width: 768px)"
-                srcset="./images/portfolio/4_M.jpg 1x, ./images/portfolio/4@2x_M.jpg 2x "
-                type="image/jpg" 
-                />
-                <source
-                media="(max-width: 767px)"
-                srcset="./images/portfolio/4_S.jpg 1x, ./images/portfolio/4@2x_S.jpg 2x "
-                type="image/jpg" 
-                />
-              <img class="portfolio__pic" src="./images/portfolio/4_S.jpg" alt="Пример работы 4" width="418" height="360" />
-              </picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/portfolio/4_L.jpg 1x, ./images/portfolio/4@2x_L.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/portfolio/4_M.jpg 1x, ./images/portfolio/4@2x_M.jpg 2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/portfolio/4_S.jpg 1x, ./images/portfolio/4@2x_S.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="portfolio__pic"
+									src="./images/portfolio/4_S.jpg"
+									alt="Пример работы 4"
+									width="418"
+									height="360"
+								/>
+							</picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -658,7 +735,7 @@
 				<form class="modal__register-form">
 					<strong>Присоединяйтесь к нам!</strong>
 					<label>
-						<span>Имя* </span>
+						<span>Имя*</span>
 						<input class="input" type="text" name="user-name" placeholder="" />
 
 						<svg class="icon-modal" width="20" height="20">
@@ -667,7 +744,7 @@
 					</label>
 
 					<label>
-						<span>Почта* </span>
+						<span>Почта*</span>
 						<input class="input" type="text" name="user-name" placeholder="" />
 
 						<svg class="icon-modal" width="20" height="20">
@@ -695,23 +772,25 @@
 						<p class="" id="payment-method">Виберите способ оплаты :</p>
 						<div class="payment__group">
 							<label class="payment__label">
-								<input class=" payment__input" type="radio" name="user-payment" value="visa" checked required/>
-									<span class="payment__icon-check"> 
-										<svg class="payment__icon" width="36" height="32">
-									<use href="./images/symbol-defs.svg#icon-visa"></use>
-								</svg></span>
+								<input class="payment__input" type="radio" name="user-payment" value="visa" checked required />
+								<span class="payment__icon-check">
+									<svg class="payment__icon" width="36" height="32">
+										<use href="./images/symbol-defs.svg#icon-visa"></use>
+									</svg>
+								</span>
 							</label>
 							<label class="payment__label">
-								<input class="payment__input" type="radio" name="user-payment" value="mastercard" required/>
-									<span class="payment__icon-check">
-										<svg class="payment__icon" width="36" height="32">
-									<use href="./images/symbol-defs.svg#icon-mastercard"></use>
-								</svg></span>
+								<input class="payment__input" type="radio" name="user-payment" value="mastercard" required />
+								<span class="payment__icon-check">
+									<svg class="payment__icon" width="36" height="32">
+										<use href="./images/symbol-defs.svg#icon-mastercard"></use>
+									</svg>
+								</span>
 							</label>
 							<label class="payment__label">
-								<input class=" payment__input" type="radio" name="user-payment" value="google-pay" required/>
-									<span class="payment__icon-check">
-										<svg class="payment__icon" width="36" height="32">
+								<input class="payment__input" type="radio" name="user-payment" value="google-pay" required />
+								<span class="payment__icon-check">
+									<svg class="payment__icon" width="36" height="32">
 										<use href="./images/symbol-defs.svg#icon-google-pay"></use>
 									</svg>
 								</span>

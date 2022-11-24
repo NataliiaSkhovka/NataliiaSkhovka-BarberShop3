@@ -15,7 +15,7 @@
   --anim-fast: 300ms ease-in-out;
 }
 
-.contacts, .team, .price, .benefits, .about {
+.contacts, .price, .benefits, .about {
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -332,9 +332,14 @@ img {
           align-items: center;
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: 1.91;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .uppertitle {
+    line-height: 1.36;
+  }
 }
 .uppertitle--mode-light {
   color: #303030;
@@ -1307,6 +1312,54 @@ img {
 
 .team {
   background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+.team__list {
+  --items: 1;
+  --indent: 64px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    --items: 3;
+    --indent: 30px;
+  }
+}
+.team__item {
+  width: 418px;
+  height: 346px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    max-width: 450px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 370px;
+  }
 }
 .team__title {
   margin-bottom: 44px;

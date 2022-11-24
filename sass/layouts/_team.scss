@@ -1,8 +1,56 @@
 .team {
-  @extend %section;
+  // @extend %section;
   
 	background-color: #f7f7f7;
 
+  padding-top: 84px;
+	padding-bottom: 84px;
+
+	
+		@media  screen and (min-width: 768px){
+			padding-top: 100px;
+			padding-bottom: 100px;
+	}
+	
+		@media  screen and (min-width: 1200px){
+			padding-top: 120px;
+			padding-bottom: 120px;
+	
+}
+
+  &__list{
+   
+    --items: 1;
+    --indent: 64px;
+  
+    @media  screen and (min-width: 768px){
+      justify-content: center;
+  }
+  @media screen and (min-width: 1200px){
+    --items: 3;
+    --indent: 30px;
+    
+   }
+
+  }
+
+  &__item{
+
+  width: 418px;
+  height: 346px;
+
+ @media screen and (min-width: 768px) {
+  max-width: 450px;
+  justify-content: center;
+  
+ }
+
+ @media screen and (min-width: 1200px){
+  width: 370px;
+  
+ }
+}
+  
   &__title {
     margin-bottom: 44px;
   }
