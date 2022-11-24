@@ -15,7 +15,7 @@
   --anim-fast: 300ms ease-in-out;
 }
 
-.contacts, .price, .benefits, .about {
+.contacts, .benefits, .about {
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -113,8 +113,6 @@ img {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -126,8 +124,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 690px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1233,6 +1229,20 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .price {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .price__list {
   display: -webkit-box;
@@ -1331,7 +1341,7 @@ img {
   --items: 1;
   --indent: 64px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1346,11 +1356,10 @@ img {
 }
 .team__item {
   width: 418px;
-  height: 346px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    max-width: 450px;
+    width: 450px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1358,7 +1367,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: 370px;
+    max-width: 370px;
   }
 }
 .team__title {
