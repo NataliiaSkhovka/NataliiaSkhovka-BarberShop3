@@ -15,7 +15,7 @@
   --anim-fast: 300ms ease-in-out;
 }
 
-.contacts, .benefits, .about {
+.contacts, .about {
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -1083,10 +1083,31 @@ img {
   color: #9da4bd;
 }
 
+.benefits {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 .benefits__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .benefits__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .benefits__left-side {
   -ms-flex-preferred-size: 50%;
