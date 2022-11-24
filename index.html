@@ -28,7 +28,7 @@
 	</head>
 	<body data-body>
 		<!--Header-->
-		<header class="header" data-header>
+		<!-- <header class="header" data-header>
 			<div class="container header__container">
 				<a class="header__logo link" href="./index.html">
 					<img class="logo__img" src="./images/Logo.svg" alt="Logo BarberShop" width="69" height="56" />
@@ -56,10 +56,10 @@
 					</button>
 				</div>
 			</div>
-		</header>
+		</header> -->
 		<main>
 			<!-- Секція Hero -->
-			<section class="hero">
+			<!-- <section class="hero">
 				<div class="container hero__container">
 					<div class="hero__left-side">
 						<ul class="hero__list list">
@@ -93,10 +93,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Секція About -->
-			<section class="about">
+			<!-- <section class="about">
 				<div class="container about__container">
 					<ul class="about__list list">
 						<li class="about__item">
@@ -126,10 +126,10 @@
 						<button class="btn btn--mode-light" type="button" data-modal-open>онлайн-запись</button>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Секція Price -->
-			<section id="price" class="price">
+			<!-- <section id="price" class="price">
 				<div class="container">
 					<p class="uppertitle uppertitle--mode-dark">Проведи время в компании лучших мастеров</p>
 					<h2 class="title title--mode-dark price__title">Услуги и цены</h2>
@@ -177,10 +177,10 @@
 					</ul>
 					<button class="btn btn--mode-dark price__btn" type="button" data-modal-open> онлайн-запись</button>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Секція Benefits -->
-			<section class="benefits">
+			<!-- <section class="benefits">
 				<div class="container benefits__container">
 					<div class="benefits__left-side">
 						<ul class="benefits__list list">
@@ -210,10 +210,10 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Секція Team -->
-			<section id="team" class="team">
+			<!-- <section id="team" class="team">
 				<div class="container">
 					<p class="uppertitle uppertitle--mode-light">для настоящих ценителей атмосферы</p>
 					<h2 class="team__title title title--mode-light">Наши мастера</h2>
@@ -406,7 +406,7 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Секція Portfolio -->
 			<section class="portfolio">
@@ -415,13 +415,24 @@
 					<h2 hidden>Примеры работ</h2>
 					<ul class="portfolio__list list card-set">
 						<li class="portfolio__item card-set__item">
-							<img
-								class="portfolio__pic"
-								src="./images/1.jpg"
-								alt="Пример работы 1"
-								width="270"
-								height="360"
-							/>
+							<picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/portfolio/1_L.jpg 1x, ./images/portfolio/1@2x_L.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/portfolio/1_M.jpg 1x, ./images/portfolio/1@2x_M.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/portfolio/1_S.jpg 1x, ./images/portfolio/1@2x_S.jpg 2x "
+                type="image/jpg" 
+                />
+              <img class="portfolio__pic" src="./images/portfolio/1_S.jpg" alt="Пример работы 1" width="418" height="360" />
+              </picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -430,13 +441,24 @@
 							</div>
 						</li>
 						<li class="portfolio__item card-set__item">
-							<img
-								class="portfolio__pic"
-								src="./images/2.jpg"
-								alt="Пример работы 2"
-								width="270"
-								height="360"
-							/>
+							<picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/portfolio/2_L.jpg 1x, ./images/portfolio/2@2x_L.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/portfolio/2_M.jpg 1x, ./images/portfolio/2@2x_M.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/portfolio/2_S.jpg 1x, ./images/portfolio/2@2x_S.jpg 2x "
+                type="image/jpg" 
+                />
+              <img class="portfolio__pic" src="./images/portfolio/2_S.jpg" alt="Пример работы 2" width="418" height="360" />
+              </picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -445,13 +467,24 @@
 							</div>
 						</li>
 						<li class="portfolio__item card-set__item">
-							<img
-								class="portfolio__pic"
-								src="./images/3.jpg"
-								alt="Пример работы 3"
-								width="270"
-								height="360"
-							/>
+							<picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/portfolio/3_L.jpg 1x, ./images/portfolio/3@2x_L.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/portfolio/3_M.jpg 1x, ./images/portfolio/3@2x_M.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/portfolio/3_S.jpg 1x, ./images/portfolio/3@2x_S.jpg 2x "
+                type="image/jpg" 
+                />
+              <img class="portfolio__pic" src="./images/portfolio/3_S.jpg" alt="Пример работы 3" width="418" height="360" />
+              </picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -460,13 +493,24 @@
 							</div>
 						</li>
 						<li class="portfolio__item card-set__item">
-							<img
-								class="portfolio__pic"
-								src="./images/4.jpg"
-								alt="Пример работы 4"
-								width="270"
-								height="360"
-							/>
+							<picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/portfolio/4_L.jpg 1x, ./images/portfolio/4@2x_L.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/portfolio/4_M.jpg 1x, ./images/portfolio/4@2x_M.jpg 2x "
+                type="image/jpg" 
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/portfolio/4_S.jpg 1x, ./images/portfolio/4@2x_S.jpg 2x "
+                type="image/jpg" 
+                />
+              <img class="portfolio__pic" src="./images/portfolio/4_S.jpg" alt="Пример работы 4" width="418" height="360" />
+              </picture>
 							<div class="overlay">
 								<p class="overlay__desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tenetur! Lorem ipsum dolor sit amet
@@ -479,7 +523,7 @@
 			</section>
 
 			<!-- Секція Contacts -->
-			<section id="contacts" class="contacts">
+			<!-- <section id="contacts" class="contacts">
 				<div class="container contacts__container">
 					<div class="contacts__left-side">
 						<h2 class="title title--mode-dark">Онлайн-запись</h2>
@@ -581,11 +625,11 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
 		</main>
 
 		<!-- Секція футер -->
-		<footer class="footer">
+		<!-- <footer class="footer">
 			<div class="container footer__container ">
 				<div class="footer__cop">
 					<p class="footer__copyright">&#169; Copyright 2020</p></div>
@@ -600,7 +644,7 @@
 				</ul>
 			</div>
 			</div>
-		</footer>
+		</footer> -->
 
 		<!-- Модальне вікно -->
 		<div class="backdrop is-hidden" data-modal>

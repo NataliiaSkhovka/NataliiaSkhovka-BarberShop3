@@ -1,14 +1,50 @@
 .portfolio{
-  @extend %section;
+  // @extend %section;
+	padding-top: 84px;
+	padding-bottom: 84px;
+
+	
+		@media  screen and (min-width: 768px){
+			padding-top: 100px;
+			padding-bottom: 100px;
+	}
+	
+		@media  screen and (min-width: 1200px){
+			padding-top: 130px;
+			padding-bottom: 130px;
+	
 }
 .portfolio__list {
-	--items: 4;
+	--items: 1;
+
+	@media  screen and (min-width: 768px){
+		--items: 2;
+}
+
+	@media  screen and (min-width: 1200px){
+		--items: 4;
+
+}
 }
 
 .portfolio__item {
 	position: relative;
 	overflow: hidden;
+
+	width: 418px;
+  height: 360px;
+
+ @media screen and (min-width: 768px) {
+  width: 330px;
+  
+ }
+
+ @media screen and (min-width: 1200px){
+  width: 270px;
+  
+ }
 }
 .portfolio__item:hover .overlay {
 	transform: translateY(0);
+}
 }

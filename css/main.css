@@ -15,7 +15,7 @@
   --anim-fast: 300ms ease-in-out;
 }
 
-.contacts, .team, .price, .portfolio, .benefits, .about {
+.contacts, .team, .price, .benefits, .about {
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -70,8 +70,8 @@ img {
 }
 
 .card-set__item {
-  -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+  -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
+      flex-basis: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
 }
 
 .link {
@@ -112,11 +112,30 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 418px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 690px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .main-title {
@@ -1150,16 +1169,52 @@ img {
       flex-basis: 50%;
 }
 
-.portfolio__list {
-  --items: 4;
+.portfolio {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
-
-.portfolio__item {
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+.portfolio .portfolio__list {
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .portfolio__list {
+    --items: 4;
+  }
+}
+.portfolio .portfolio__item {
   position: relative;
   overflow: hidden;
+  width: 418px;
+  height: 360px;
 }
-
-.portfolio__item:hover .overlay {
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio__item {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .portfolio__item {
+    width: 270px;
+  }
+}
+.portfolio .portfolio__item:hover .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
