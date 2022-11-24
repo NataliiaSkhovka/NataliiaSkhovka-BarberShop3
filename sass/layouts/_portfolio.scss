@@ -1,0 +1,14 @@
+.portfolio{
+  @extend %section;
+}
+.portfolio__list {
+	--items: 4;
+}
+
+.portfolio__item {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio__item:hover .overlay {
+	transform: translateY(0);
+}

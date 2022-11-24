@@ -1,0 +1,254 @@
+.checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.checkbox__custom-checkbox {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	outline: 2px solid #9da4bd;
+	outline-offset: -2px;
+	border-radius: 8px;
+
+	transition: outline-color 250ms, background-color 250ms;
+}
+
+.checkbox__input:focus + .checkbox__custom-checkbox {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.checkbox__input:checked + .checkbox__custom-checkbox {
+	background-color: #ff6c00;
+	outline-color: #ff6c00;
+}
+
+.checkbox__icon {
+	fill: #ffffff;
+}
+
+.checkbox__agreement {
+	font-size: 11px;
+	user-select: none;
+}
+.icon-modal{
+	fill: #ff6c00;
+}
+.input{
+	border:1px solid  #ff6c00;
+	border-radius:25px ;
+}
+.modal__js-choice{
+	border:1px solid  #ff6c00;
+	border-radius:25px ;
+}
+/* payment */
+.payment__icon-check{
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 32px;
+	/*outline: 0px solid #ff6c00;*/
+	outline-offset: -1px;
+	border-radius: 6px;
+
+}
+.payment__group {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.payment__icon {
+	fill: #000;
+	
+}
+
+
+/* choises select */
+.choices__inner {
+	border: 2px solid #ff6c00;
+	border-radius: 20px;
+}
+/*Contact form styles*/
+.contacts__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	margin-bottom: 44px;
+}
+
+.contacts__group {
+	position: relative;
+	flex-basis: 270px;
+}
+
+.contacts__group:last-child {
+	flex-basis: 260px;
+}
+
+.contacts__field {
+	width: 100%;
+	height: 26px;
+	padding-left: 5px;
+	padding-right: 25px;
+
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+	outline: transparent;
+
+	transition: border-color 200ms;
+}
+
+.contacts__field:focus,
+.contacts__field:not(:placeholder-shown) {
+	border-color: #ffffff;
+}
+
+.contacts__field:focus:invalid:not(:placeholder-shown) {
+	border-color: #f1b211;
+}
+.contacts__field:focus:valid:not(:placeholder-shown),
+.contacts__field:valid:not(:placeholder-shown) {
+	border-color: #90ee90;
+}
+
+.contacts__field::placeholder {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: calc(15 / 11);
+	letter-spacing: 0.1em;
+
+	color: rgba(157, 164, 189, 0.4);
+	opacity: 0;
+
+	transition: opacity 250ms ease-in-out 50ms;
+}
+
+.contacts__field:focus::placeholder {
+	opacity: 1;
+}
+
+.contacts__label {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	font-weight: 600;
+	font-size: 11px;
+	line-height: calc(15 / 11);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: rgba(157, 164, 189, 0.4);
+	transition: transform var(--anim-fast);
+}
+
+.contacts__field:focus + .contacts__label,
+.contacts__field:not(:placeholder-shown) + .contacts__label {
+	transform: translateY(-30px) scale(0.7);
+	transform-origin: top left;
+	color: #ffffff;
+}
+
+.contacts__error {
+	position: absolute;
+	left: 0;
+	bottom: -80%;
+	font-size: 9px;
+}
+
+.contacts__error-icon {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.icon-attention,
+.contacts__error {
+	color: #f1b211;
+	fill: #f1b211;
+	opacity: 0;
+	transition: 250ms ease-in;
+}
+
+.icon-success {
+	fill: #90ee90;
+	opacity: 0;
+	transition: 250ms ease-in 50ms;
+}
+
+.contacts__field:focus:invalid ~ .contacts__error-icon .icon-attention,
+.contacts__field:focus:invalid ~ .contacts__error {
+	opacity: 1;
+}
+
+.contacts__field:focus:valid ~ .contacts__error-icon .icon-success,
+.contacts__field:valid:not(:placeholder-shown) ~ .contacts__error-icon .icon-success {
+	opacity: 1;
+}
+
+/* message field */
+.contacts__message-group {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom: 44px;
+}
+
+.contacts__message-group .contacts__label {
+	top: 0;
+}
+
+.contacts__message:focus + .contacts__label,
+.contacts__message:not(:placeholder-shown) + .contacts__label {
+	transform: translateY(-20px) scale(0.7);
+	transform-origin: top left;
+	color: #ffffff;
+}
+
+.contacts__message {
+	width: 100%;
+	height: 76px;
+	padding: 5px;
+	resize: none;
+
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	background-color: transparent;
+	outline: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+	transition: border-color 200ms;
+}
+
+.contacts__message:focus,
+.contacts__message:not(:placeholder-shown) {
+	border-color: #ffffff;
+}
+
+.contacts__message::placeholder {
+	color: rgba(157, 164, 189, 0.4);
+	opacity: 0;
+
+	transition: opacity 250ms ease-in-out 50ms;
+}
+
+.contacts__message:focus::placeholder {
+	opacity: 1;
+}

@@ -1,0 +1,24 @@
+.about{
+@extend %section;
+
+  &__container {
+    display: flex;
+  }
+  
+  &__list {
+    display: flex;
+  }
+  
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &__group {
+    flex-basis: 500px;
+    margin-left: 64px;
+  }
+  
+  &__descr {
+    margin-bottom: 40px;
+  }
+}

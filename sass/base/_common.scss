@@ -1,0 +1,25 @@
+body {
+	font-family: var(--main-font), sans-serif;
+	font-size: 14px;
+	line-height: 1.86;
+}
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* common styles*/
+.no-scroll {
+	overflow: hidden;
+}
