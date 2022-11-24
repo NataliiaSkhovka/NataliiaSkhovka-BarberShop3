@@ -26,36 +26,76 @@
 	
 }
 
+&__title{
+  font-size: 40px;
+  line-height: 1.17;
+
+  @media  screen and (min-width: 768px){
+    font-size: 42px;
+    line-height: 1.16; 
+  }
+}
+
   &__list {
-    display: flex;
-    margin-bottom: 50px;
+    display: block;
+    margin-bottom: 44px;
   
-    font-size: 18px;
-    line-height: 1.67;
+    font-size: 14px;
+    line-height: 1.43;
     letter-spacing: 0.02em;
     color: #9da4bd;
   
     perspective: 1000px;
+
+    @media  screen and (min-width: 768px){
+      font-size: 18px;
+      line-height: 1.67;
+    }
+
+    @media  screen and (min-width: 1200px){
+      display: flex;
+     
+    }
   }
   
+  &__list{
+
+    @media  screen and (min-width: 480px) and (max-width:1199px){
+      background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    padding: 30px 40px;
+    }
+    }
+    
   &__item {
-    flex-basis: 50%;
+    
+    @media  screen and (min-width: 1200px){
+			flex-basis: 50%;
     transition: transform var(--anim-slow);
+	
+}
+  
   }
   
   &__item:first-child {
-    transform-origin: left center;
-    transform: rotateY(15deg);
-    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  
+    @media  screen and (min-width: 1200px){
+      transform-origin: left center;
+      transform: rotateY(15deg);
+      background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
   }
   
   &__item:last-child {
+    @media  screen and (min-width: 1200px){
     transform: rotateY(-15deg);
     transform-origin: right center;
     background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
+}
   &__item:hover {
-    transform: rotateY(0);
+    @media  screen and (min-width: 1200px){
+      transform: rotateY(0);
+    }
   }
   
   &__inner:not(:last-child) {
@@ -72,9 +112,19 @@
   }
   
   &__inners {
-    padding: 30px 40px;
+    // margin-bottom: 20px;
+    @media  screen and (min-width: 1200px){
+      padding: 30px 40px;
+    }
+    
   }
-  
+  &__inners--first{
+    margin-bottom: 20px;
+  }
+  &__inners:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   &__inner {
     display: flex;
     align-items: baseline;
