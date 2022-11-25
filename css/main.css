@@ -1552,6 +1552,16 @@ img {
   color: #9da4bd;
 }
 
+.footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
