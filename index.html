@@ -99,22 +99,40 @@
 				<div class="container about__container">
 					<ul class="about__list list">
 						<li class="about__item">
-							<img class="about__pic" src="./images/boroda.jpg" alt="Бритье бороды" width="270" height="445" />
+							<picture >
+								<source
+									media="(min-width: 1200px)"
+									srcset=" ./images/about/boroda_L.jpg 1x, ./images/about/boroda_@2x_L.jpg  2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/about/boroda__M.jpg  1x, ./images/about/boroda_@2x_M.jpg  2x"
+									type="image/jpg"
+								/>
+								<img class="about__avatar" src="./images/about/boroda__M.jpg" alt="boroda" width="330" height="325" />
+							</picture>
 						</li>
 						<li class="about__item">
-							<img
-								class="about__pic"
-								src="./images/haircut.jpg"
-								alt="Бритье опасной бритвой"
-								width="270"
-								height="445"
-							/>
+							<picture >
+								<source
+									media="(min-width: 1200px)"
+									srcset=" ./images/about/haircut_L.jpg 1x, ./images/about/haircut@2x_L.jpg  2x"
+									type="image/jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/about/haircut_M.jpg  1x, ./images/about/haircut@2x_M.jpg  2x"
+									type="image/jpg"
+								/>
+								<img class="about__avatar" src="./images/about/haircut_M.jpg" alt="boroda" width="330" height="325" />
+							</picture>
 						</li>
 					</ul>
 					<div class="about__group">
 						<p class="uppertitle uppertitle--mode-light">About</p>
-						<h2 class="title title--mode-light">Best Barbershop in your city</h2>
-						<p class="subtitle subtitle--mode-light">
+						<h2 class="about__title title title--mode-light">Best Barbershop in your city</h2>
+						<p class="about__subtitle subtitle subtitle--mode-light">
 							If you want to add more confidence to your image, you should visit us
 						</p>
 						<p class="about__descr">

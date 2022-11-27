@@ -128,9 +128,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1600px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
@@ -1043,21 +1043,71 @@ img {
     display: flex;
   }
 }
-.about__item:not(:last-child) {
-  margin-right: 30px;
+.about__title {
+  font-size: 28px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+.about__subtitle {
+  font-size: 16px;
+  line-height: 1.62;
+}
+@media screen and (min-width: 768px) {
+  .about__subtitle {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 .about__group {
   margin-left: 0;
 }
 @media screen and (min-width: 768px) {
   .about__group {
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
     margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__group {
+    -ms-flex-preferred-size: 470px;
+        flex-basis: 470px;
   }
 }
 .about__descr {
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .about__descr {
+    margin-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__descr {
+    margin-bottom: 42px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__avatar {
+    width: 270px;
+    height: 445px;
+  }
 }
 
 .hero {
@@ -1316,7 +1366,7 @@ img {
 }
 
 .price {
-  max-width: 1440px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #191C26;
