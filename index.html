@@ -624,11 +624,11 @@
 			</section>
 
 			<!-- Секція Contacts -->
-			<!-- <section id="contacts" class="contacts">
+			 <section id="contacts" class="contacts">
 				<div class="container contacts__container">
 					<div class="contacts__left-side">
-						<h2 class="title title--mode-dark">Онлайн-запись</h2>
-						<form name="contacts-form" autocomplete="on" novalidate>
+						<h2 class="title title--mode-dark">Online-booking</h2>
+						<form name="contacts__form" autocomplete="on" novalidate>
 							<div class="contacts__wrapper">
 								<label class="contacts__group">
 									<input
@@ -639,7 +639,7 @@
 										minlength="3"
 										required
 									/>
-									<span class="contacts__label">Имя*</span>
+									<span class="contacts__label">Name*</span>
 									<span class="contacts__error">Минимальния длинна 3 символа</span>
 									<svg class="contacts__error-icon" width="15" height="15">
 										<use class="icon-attention" href="./images/symbol-defs.svg#icon-attension"></use>
@@ -655,7 +655,7 @@
 										required
 										id="user-phone"
 									/>
-									<span class="contacts__label">Телефон*</span>
+									<span class="contacts__label">Phone*</span>
 									<span class="contacts__error">Введите телефон в указанном формате</span>
 									<svg class="contacts__error-icon" width="15" height="15">
 										<use class="icon-attention" href="./images/symbol-defs.svg#icon-attension"></use>
@@ -671,18 +671,19 @@
 									placeholder="Enter your message"
 									minlength="3"
 								></textarea>
-								<span class="contacts__label">Cообщение</span>
+								<span class="contacts__label">Message</span>
 								<span class="contacts__error">Коментарий должен содержать от 3 до 1000 символов</span>
 								<svg class="contacts__error-icon" width="20" height="20">
 									<use class="icon-attention" href="./images/symbol-defs.svg#icon-attension"></use>
 									<use class="icon-success" href="./images/symbol-defs.svg#icon-success"></use>
 								</svg>
 							</label>
-							<button class="btn btn--mode-dark" type="submit">отправить</button>
+							<button class="btn btn--mode-dark" type="submit">send</button>
 						</form>
 					</div>
 					<div class="contacts__right-side">
-						<h2 class="title title--mode-dark">Контакты</h2>
+						<div class="contacts__right-first">
+							<h2 class="title title--mode-dark">Contacts</h2>
 						<address class="contacts__address">
 							<ul class="contacts__list list">
 								<li class="contacts__item">
@@ -695,7 +696,8 @@
 										<svg class="contacts__icon" width="24" height="24">
 											<use href="./images/symbol-defs.svg#icon-mappin"></use>
 										</svg>
-										ул. Васильковая, 7А Киев, 08132
+										st. Vasilkovaya, 7A 
+										Kiev, 08132
 									</a>
 								</li>
 								<li class="contacts__item">
@@ -716,17 +718,19 @@
 								</li>
 							</ul>
 						</address>
-
-						<h3 class="uppertitle uppertitle--mode-dark contatcs__uppertitle">время работы</h3>
-						<p class="contacts__scedule">
-							Ежедневно с
+						</div>
+            <div class="contacts__right-second">
+							<h3 class="uppertitle uppertitle--mode-dark contatcs__uppertitle">Working hours</h3>
+						  <p class="contacts__scedule">
+							Every day from 
 							<time datetime="09:00">9:00</time>
-							до
+							to
 							<time datetime="22:00">22:00</time>
 						</p>
+						</div>
 					</div>
 				</div>
-			</section> -->
+			</section> 
 		</main>
 
 		<!-- Секція футер -->
