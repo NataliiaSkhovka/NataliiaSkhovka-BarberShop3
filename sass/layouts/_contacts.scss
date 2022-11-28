@@ -1,21 +1,47 @@
 .contacts {
   // @extend %section;
-  
-	background-color: #191c26;
-	// background-image: url(../images/Bg.png);
+	
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: top 50% left calc(50% + 312px);
+  background-color: #191c26;
+	background-position: bottom;
+  
+  background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/contacts/con_S.jpg');
+  
+  @media (min-device-pixel-ratio:2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+   background-image: url('../images/contacts/con@2x_S.jpg');
+  }
+
   padding-top: 84px;
 	padding-bottom: 84px;
 
 	
 		@media  screen and (min-width: 768px){
+      background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/contacts/con_M.jpg');
+
+    @media (min-device-pixel-ratio:2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+   background-image: url('../images/contacts/con@2x_M.jpg');
+  }
 			padding-top: 100px;
 			padding-bottom: 100px;
 	}
 	
 		@media  screen and (min-width: 1200px){
+      background-position: top 50% left calc(50% + 400px);
+      background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/contacts/con_L.jpg');
+
+      @media (min-device-pixel-ratio:2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+       background-image: url('../images/contacts/con@2x_L.jpg');
+      }
 			padding-top: 130px;
 			padding-bottom: 120px;
 	
@@ -39,7 +65,8 @@
   
   &__left-side {
     @media  screen and (max-width: 767px){
-      padding-bottom: 84px;
+      
+      margin-bottom: 84px;
     }
    
 
@@ -56,6 +83,7 @@
   }
   
   &__right-side {
+    padding-top: 84px;
     @media  screen and (min-width: 768px)and (max-width:1199px){
       display: flex;
     }
@@ -99,7 +127,7 @@
     }
     
     
-    @media  screen (min-width:1199px){
+    @media  screen and (min-width:1199px){
       margin-bottom: 70px;
     }
 
@@ -122,6 +150,7 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
+    text-align: start;
   }
 
   &__right-second{
