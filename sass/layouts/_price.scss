@@ -6,21 +6,46 @@
 	margin-right: auto;
 
 	background-color: #191C26;;
-	background-image: url(../images/img@1x_lg.png);
+	
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 
+  background-image:linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/price/price_S.jpg');
+
+  @media (min-device-pixel-ratio:2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+   background-image: url('../images/price/price@2x_S.jpg');
+  }
   padding-top: 84px;
 	padding-bottom: 84px;
-
 	
 		@media  screen and (min-width: 768px){
+      background-image:linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/price/price_M.jpg');
+
+      @media (min-device-pixel-ratio:2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+       background-image: url('../images/price/price@2x_M.jpg');
+      } 
+
 			padding-top: 100px;
 			padding-bottom: 100px;
 	}
 	
 		@media  screen and (min-width: 1200px){
+
+      background-image:linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/price/price_L.jpg');
+
+    @media (min-device-pixel-ratio:2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+     background-image: url('../images/price/price@2x_L.jpg');
+    } 
 			padding-top: 120px;
 			padding-bottom: 120px;
 	

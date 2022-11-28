@@ -69,6 +69,20 @@ img {
       flex-basis: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -81,7 +95,6 @@ img {
 }
 
 .btn {
-  padding: 12px 20px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -91,6 +104,9 @@ img {
   width: 160px;
   height: 40px;
   text-align: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   background-color: transparent;
   border: 1px solid var(--accent-txt-cl);
   border-radius: 25px;
@@ -1116,12 +1132,6 @@ img {
     margin-bottom: 42px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .about__avatar {
-    width: 270px;
-    height: 445px;
-  }
-}
 
 .hero {
   position: relative;
@@ -1400,18 +1410,6 @@ img {
 .portfolio .portfolio__item {
   position: relative;
   overflow: hidden;
-  width: 418px;
-  height: 360px;
-}
-@media screen and (min-width: 768px) {
-  .portfolio .portfolio__item {
-    width: 330px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio .portfolio__item {
-    width: 270px;
-  }
 }
 .portfolio .portfolio__item:hover .overlay {
   -webkit-transform: translateY(0);
@@ -1423,23 +1421,43 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: #191C26;
-  background-image: url(../images/img@1x_lg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 1, 10, 0.907)), to(rgba(1, 1, 14, 0.841))), url("../images/price/price_S.jpg");
+  background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url("../images/price/price_S.jpg");
   padding-top: 84px;
   padding-bottom: 84px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price {
+    background-image: url("../images/price/price@2x_S.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .price {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 1, 10, 0.907)), to(rgba(1, 1, 14, 0.841))), url("../images/price/price_M.jpg");
+    background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url("../images/price/price_M.jpg");
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url("../images/price/price@2x_M.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .price {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 1, 10, 0.907)), to(rgba(1, 1, 14, 0.841))), url("../images/price/price_L.jpg");
+    background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url("../images/price/price_L.jpg");
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url("../images/price/price@2x_L.jpg");
   }
 }
 .price__title {
@@ -1596,20 +1614,11 @@ img {
     --indent: 30px;
   }
 }
-.team__item {
-  width: 418px;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    width: 450px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    max-width: 370px;
   }
 }
 .team__title {
@@ -1784,6 +1793,10 @@ img {
     padding-top: 89px;
     margin-left: 90px;
   }
+}
+
+.mail {
+  text-decoration: underline;
 }
 
 .footer {
