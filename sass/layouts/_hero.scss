@@ -50,15 +50,20 @@
   }
   
   &__left-side {
-    display: flex;
+    display: none;
+
+    @media screen and(min-width: 768px){
+      display: flex;
     align-items: flex-end;
-    max-width: 100px;
+    max-width: 90px;
     flex-basis: 100px;
+    }
+    
   }
   
   &__list {
-    margin-bottom: 40px;
-  
+    margin-bottom: 30px;
+  // padding-bottom: 68px;
     display: flex;
     align-items: center;
     gap: 40px;
