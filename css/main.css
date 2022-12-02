@@ -1180,37 +1180,18 @@ img {
   }
 }
 .hero__left-side {
-  display: none;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero__left-side {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 40px;
-    padding-right: 68px;
-    margin-right: 30px;
-    max-width: 90px;
-    -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__left-side {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 155px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding-right: 58px;
-    padding-bottom: 40px;
-    -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 100px;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
 }
 .hero__list {
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
