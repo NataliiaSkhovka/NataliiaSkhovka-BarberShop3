@@ -34,15 +34,15 @@
 	// width: 418px;
   // height: 360px;
 
-//  @media screen and (min-width: 768px) {
-//   width: 330px;
+ @media screen and (min-width: 768px) {
+  max-width: 330px;
   
-//  }
+ }
 
-//  @media screen and (min-width: 1200px){
-//   width: 270px;
+ @media screen and (min-width: 1200px){
+  max-width: 270px;
   
-//  }
+ }
 }
 .portfolio__item:hover .overlay {
 	transform: translateY(0);

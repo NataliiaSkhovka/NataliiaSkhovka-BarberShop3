@@ -6,7 +6,8 @@
   background-color: #191c26;
 	background-position: bottom;
   
-  background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/contacts/con_S.jpg');
+  background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)),
+   url('../images/contacts/con_S.jpg');
   
   @media (min-device-pixel-ratio:2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -20,7 +21,8 @@
 
 	
 		@media  screen and (min-width: 768px){
-      background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/contacts/con_M.jpg');
+      background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), 
+      url('../images/contacts/con_M.jpg');
 
     @media (min-device-pixel-ratio:2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -34,7 +36,8 @@
 	
 		@media  screen and (min-width: 1200px){
       background-position: top 50% left calc(50% + 400px);
-      background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), url('../images/contacts/con_L.jpg');
+      background-image: linear-gradient(rgba(1, 1, 10, 0.907), rgba(1, 1, 14, 0.841)), 
+      url('../images/contacts/con_L.jpg');
 
       @media (min-device-pixel-ratio:2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -89,6 +92,7 @@
     }
 
     @media  screen and (min-width: 1200px){
+      padding-top: 0;
       flex-basis: 50%;
       padding-left: 100px;
     }

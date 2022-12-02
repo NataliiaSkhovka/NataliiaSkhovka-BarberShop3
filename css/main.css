@@ -1173,24 +1173,44 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .hero__left-side {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__left-side {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 40px;
+    padding-right: 68px;
+    margin-right: 30px;
+    max-width: 90px;
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 155px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    max-width: 100px;
+    padding-right: 58px;
+    padding-bottom: 40px;
     -ms-flex-preferred-size: 100px;
         flex-basis: 100px;
   }
 }
 .hero__list {
-  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1411,6 +1431,16 @@ img {
   position: relative;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio__item {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .portfolio__item {
+    max-width: 270px;
+  }
+}
 .portfolio .portfolio__item:hover .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1621,6 +1651,11 @@ img {
             justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__item {
+    max-width: 370px;
+  }
+}
 .team__title {
   margin-bottom: 44px;
 }
@@ -1730,6 +1765,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts__right-side {
+    padding-top: 0;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     padding-left: 100px;
