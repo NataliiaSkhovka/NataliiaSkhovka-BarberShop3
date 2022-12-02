@@ -27,11 +27,19 @@
 	</head>
 	<body data-body>
 		<!--Header-->
-		<!-- <header class="header" data-header>
+		 <header class="header" data-header>
 			<div class="container header__container">
-				<a class="header__logo link" href="./index.html">
-					<img class="logo__img" src="./images/Logo.svg" alt="Logo BarberShop" width="69" height="56" />
+				<a class="header__logo link" href="./index.html" aria-label="Logo BarberShop">
+				<svg class="logo__icon" width="69" height="56">
+					<use href="./images/symbol-defs.svg#icon-Logo"></use>
+				</svg>	
 				</a>
+				<button class="mobile-menu__btn" type="button">
+					<svg class="mobile-menu__icon" width="40" height="40">
+						<use class="mobile-menu__burger" href="./images/symbol-defs.svg#burger-menu"></use>
+						<use class="mobile-menu__close" href="./images/symbol-defs.svg#icon-close"></use>
+					</svg>
+				</button>
 				<nav class="nav">
 					<ul class="nav__list list">
 						<li class="nav__item">
@@ -55,7 +63,7 @@
 					</button>
 				</div>
 			</div>
-		</header> -->
+		</header>
 		<main>
 			<!-- Секція Hero -->
 			 <section class="hero">

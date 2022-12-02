@@ -1,6 +1,15 @@
-.logo__img{
-	fill: currentColor;
+.logo__icon{
+	fill: #fff;
+	
+
+	@media screen and (min-width:768px){
+		fill: #303030;
+
+	}
 }
 .header__logo {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	margin-right: 71px;
 }
