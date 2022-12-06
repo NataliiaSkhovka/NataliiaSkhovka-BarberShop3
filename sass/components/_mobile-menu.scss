@@ -65,7 +65,7 @@
   font-size: 18px;
   line-height: 1.38;
   letter-spacing: 0.1em;
-
+  margin-bottom: 64px;
   color: #303030;
 
 }
@@ -83,16 +83,18 @@ color: #303030;
 }
 
 .mobile-menu-contacts{
-  margin-top: 64px;
  
   font-weight: 500;
   font-size: 18px;
   line-height: 1.38;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   
   color: #303030;
 }
 
+.mobile-menu-contacts__item:not(:last-child){
+  margin-bottom: 24px;
+}
 
 .mobile-menu-socials{
 display: block;
@@ -104,22 +106,22 @@ font-size: 14px;
 line-height: 1.36;
 letter-spacing: 0.2em;
 color: #FF6C00;
-margin-bottom: 227px;
-margin-left: 140px;
-padding-top: 64px;
+
+margin-top: 64px;
 }
 
 .mobile-menu-socials::before {
   content: "";
 
-  margin-right: 20px;
+  margin-right: 40px;
   display: inline-block;
   width: 1px;
   height: 60px;
 
   background-color: #303030;
-  // transform: rotate(90deg);
+  transform: rotate(90deg);
 }
+
 .mobile-menu-socials__item:not(:last-child) {
 margin-bottom: 24px;
 
