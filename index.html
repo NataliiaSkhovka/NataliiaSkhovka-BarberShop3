@@ -34,12 +34,44 @@
 					<use href="./images/symbol-defs.svg#icon-Logo"></use>
 				</svg>	
 				</a>
-				<button class="mobile-menu__btn" type="button">
+				<button class="mobile-menu__btn" type="button" data-menu-button>
 					<svg class="mobile-menu__icon" width="40" height="40">
 						<use class="mobile-menu__burger" href="./images/symbol-defs.svg#burger-menu"></use>
 						<use class="mobile-menu__close" href="./images/symbol-defs.svg#icon-close"></use>
 					</svg>
 				</button>
+				<!--mobile-menu-->
+				<div class="mobile-menu" data-menu>
+					<ul class="list mobile-menu-nav list">
+						<li class="mobile-menu-nav__item" >
+							<a class="link mobile-menu-nav__link current" href="./index.html">About</a>
+						</li>
+						<li class="mobile-menu-nav__item" >
+							<a class="link mobile-menu-nav__link" href="#price">Services and prices</a>
+						</li>
+						<li class="mobile-menu-nav__item" >
+							<a class="link mobile-menu-nav__link" href="#team">Barbers</a>
+						</li>
+						<li class="mobile-menu-nav__item" >
+							<a class="link mobile-menu-nav__link" href="#contacts">Contacts</a>
+						</li>
+					</ul>
+					<ul class="list mobile-menu-contacts list">
+						<li class="mobile-menu-contacts__item">
+							<a class="link mobile-menu-contacts__link" href="tel:+380441111111">+38 044 111 11 11</a>
+						</li>
+						<button class="btn btn--mode-light" type="button" data-modal-open>online-booking</button>
+					</ul>
+					<ul class="list mobile-menu-socials list">
+						<li class="mobile-menu-socials__item">
+							<a class="mobile-menu-socials__link link" href="">Instagram</a>
+						</li>
+						<li class="mobile-menu-socials__item">
+							<a class="mobile-menu-socials__link link" href="">Youtube</a>
+						</li>
+					</ul>
+				</div>
+				<!--mobile-menu-end-->
 				<nav class="nav">
 					<ul class="nav__list list">
 						<li class="nav__item">
@@ -82,7 +114,8 @@
 					<div class="hero__right-side">
 						<p class="uppertitle uppertitle--mode-dark" lang="en">A hair salon for men in Kyiv</p>
 						<h1 class="main-title">BarberShop</h1>
-						<p class="hero__descr">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+						<p class="hero__descr">We are experts in trendy men’s haircuts.
+							We work quickly, carefully and with style.</p>
 					</div>
 
 					<ul class="slider list">
@@ -852,7 +885,6 @@
 				</form>
 			</div>
 		</div>
-
 		<!-- Choices JavaScript (latest) start -->
 		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 		<script src="./js/datalist.js"></script>
@@ -874,5 +906,6 @@
 
 		<script src="./js/header-scroll.js"></script>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
