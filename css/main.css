@@ -1053,13 +1053,11 @@ img {
 }
 
 .mobile-menu-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 24px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-weight: 600;
@@ -1068,11 +1066,21 @@ img {
   letter-spacing: 0.2em;
   color: #FF6C00;
   margin-bottom: 227px;
+  margin-left: 140px;
+  padding-top: 64px;
+}
+
+.mobile-menu-socials::before {
+  content: "";
+  margin-right: 20px;
+  display: inline-block;
+  width: 1px;
+  height: 60px;
+  background-color: #303030;
 }
 
 .mobile-menu-socials__item:not(:last-child) {
-  padding-right: 24px;
-  border-right: 1px solid rgba(33, 33, 33, 0.21);
+  margin-bottom: 24px;
 }
 
 .mobile-menu-socials__link {
