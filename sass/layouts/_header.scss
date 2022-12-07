@@ -22,10 +22,11 @@
     
     @media  screen and (min-width: 768px){
       display: block;
-     margin-left: auto;
+      margin-left: auto;
     }
     @media  screen and (min-width: 1200px){
       display: flex;
+      flex-wrap: wrap;
     }
 
     
@@ -49,7 +50,7 @@
   &__contact-second{
     display: none;
     @media  screen and (min-width: 768px) and (max-width:1199px){
-      display: flex;
+      display: block;
       font-weight: 600;
       font-size: 12px;
       line-height: 1.33;
@@ -71,9 +72,11 @@
 	display: none;
   @media  screen and (min-width: 768px){
     display: block;
+    flex-wrap: wrap;
   }
 &__list {
 	display: flex;
+  
 }
 
 &__item:not(:last-child) {
